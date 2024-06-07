@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsedoSelectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+    }
+   header::before{
+    content:"";
+
+    background: url('https://source.unsplash.com/random/1920x1080/?wallpaper,landscape');
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index:-1;
+   }
+    header ul {
+        display: flex;
+        
+
+    }
+
+    li{
+        margin: 2px 24px;
+        list-style: none;
+    }
+
+
+  
+    section{
+        height: 344px;
+        width: 50%;
+        margin: auto;
+        /* border: 2px solid white; */
+          display: flex;
+         
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+         
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        text-align: center;
+        font-size: 10px;
+    }
+</style>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Sect">
+        <h1>Welcome To New World</h1>
+        <p> dolorem quisquam nulla voluptatem! Explicabo, enim? Veniam blanditiis corrupti perferendis ea molestias numquam sit aperiam qui beatae!</p>
+    </section>
+    
+</body>
+</html>

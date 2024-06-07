@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<style>
+    .container {
+        border: 2px solid black;
+        width: 33%;
+        margin :auto;
+    }
+    /* .form-control {
+        display: block;
+    } */
+    input{
+        display: block;
+        width: 33%;
+        margin: auto;
+       
+    }
+  input[type="text"]{
+        border: 2px solid black;
+        /* margin: 120px; */
+
+    }
+    a[target]{
+       background-color: yellow;
+    }
+
+    div ul li:nth-child(2n+1)
+    {
+        background-color: green;
+    }
+    div>p{
+        background-color: firebrick;
+    }
+    div+p{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Google</a>
+        <a href="http://google.com">Google</a>
+        <p>I am Paragraph Inside Div</p>
+        <form action="sumbit" class="form-control">
+            <input type="text" placeholder="Enter Ur Name">
+            <input type="Email" placeholder="Enter Ur Email">
+            <input type="number" placeholder="Age">
+            <button type="submit">Sumbit</button>
+        </form>
+        <ul>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+            <li>Item -1</li>
+        </ul>
+    </div>
+    <p>I Am Outside</p>
+
+</body>
+</html>

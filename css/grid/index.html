@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+
+    .container{
+        display: grid;
+        /* grid-template-columns: 100px 300px 100px; */
+        /* grid-template-columns: 100px auto 100px; */
+        /* grid-template-columns:1fr 2fr 1fr; */
+        /* grid-template-columns: repeat(4,auto); */
+        /* grid-template-rows: 1fr 2fr 1fr;
+        grid-auto-rows: 3fr; */
+        /* grid-gap: 4rem; */
+        /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+        /* grid-template-columns: 3fr 1fr; */
+        grid-template-columns: repeat(auto-fit,minmax(100px,3fr));
+
+
+    
+
+}
+
+   .box{
+    display: grid;
+    grid-template-areas: 'navbar' 'navbar' 
+    'container' 'container'
+    'footer' 'footer';
+   }
+    
+    .item{
+        border:2px solid black;;
+        background-color: aqua;
+        padding:1rem;
+        /* margin:1rem; */
+    }
+    /* .item:first-child{
+        background-color: red;
+        grid-column: 1/span 3;
+        grid-row: 1/ span 3 ;
+    } */
+    
+    
+    
+
+
+
+
+
+
+     .navbar{
+        grid-area: navbar;
+     }
+     .container{
+        grid-area: container;
+     }
+     .footer{
+        grid-area: footer;
+     }
+</style>
+<body>
+    <!-- <div class="container">
+        <div class="item">box-1</div>
+        <div class="item">box-2</div>
+        <div class="item">box-3</div>
+        <div class="item">box-4</div>
+        <div class="item">box-5</div>
+        <div class="item">box-6</div>
+        <div class="item">box-7</div>
+        <div class="item">box-8</div>
+        <div class="item">box-9</div>
+        <div class="item">box-10</div>
+    </div> -->
+  <div class="box">
+            <div class="navbar item">
+                <h1>Home About Page Contact Us</h1> 
+            </div>
+            <div class="container item">
+                <div class="left item ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus laudantium autem, debitis ipsa officia iure, eaque reprehenderit fugit voluptatibus qui laboriosam placeat et eligendi, ipsum repudiandae dolor natus nostrum! Id.
+                    Asperiores repudiandae dolor debitis doloremque consequatur quo, nihil magni iste sint quos illo consequuntur ut earum. Dicta labore voluptatem quae ad. Eligendi molestiae, consequatur sequi est maiores quos labore nihil?
+                    Quae dicta neque est reiciendis amet, dolor nulla, quasi aliquid quas mollitia vitae doloribus fugit provident a voluptatibus repellat vero nemo pariatur cum eius. Voluptate porro obcaecati iste blanditiis recusandae!
+                    Aspernatur inventore obcaecati libero rerum provident veniam possimus distinctio voluptatibus fugit. Porro saepe provident necessitatibus esse repudiandae veritatis pariatur possimus! Molestiae facilis, obcaecati fuga dignissimos asperiores alias minima sequi error!
+                </div>
+
+                <div class="right item">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde cupiditate libero neque sit quia repellat, eaque quod iusto. Praesentium, placeat quo molestias labore unde voluptates at inventore. Sequi, hic vitae.
+                    Voluptates nam dolorem dignissimos labore pariatur, dolorum corporis doloremque atque sed. Voluptas similique provident sunt nemo ad doloribus ut, earum commodi recusandae doloremque non omnis dolor consectetur distinctio asperiores sequi.
+                    Porro veritatis officiis libero? Quibusdam beatae maiores iure amet illo consequuntur commodi quod nihil minus exercitationem pariatur rem aspernatur reprehenderit quia eius quae, dolore facilis vitae doloremque id! Officiis, labore.
+                    Quia inventore itaque molestias? Vitae error dolorem molestias optio qui voluptas, similique cumque, exercitationem rem, minus quis vel illo distinctio. Fugiat ut quam quis quo libero voluptatibus corrupti quaerat iusto?
+                </div>
+
+            </div>
+            <div class="footer item ">
+            <h1 >Subscribe Follow Now</h1>
+            </div>
+  </div>
+</body>
+</html>
